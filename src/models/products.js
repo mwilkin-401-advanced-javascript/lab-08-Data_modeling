@@ -9,6 +9,7 @@ class Products {
 
   constructor() {
     this.database = [];
+    this.product = product;
   }
 
   get(id) {
