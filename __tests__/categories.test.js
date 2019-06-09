@@ -1,8 +1,8 @@
 'use strict';
 
 const Categories = require('../src/models/categories.js');
-const mongoose = require('mongoose');
-const supertest = require('supertest');
+// const mongoose = require('mongoose');
+// const supertest = require('supertest');
 const supergoose = require('./supergoose.js');
 
 beforeAll(supergoose.startDB);
@@ -18,14 +18,27 @@ describe('Categories Model', () => {
         expect(categories).toBeDefined();
       });
     });
-  it('can post() a new category', () => {
+
+  it('can POST a new category', () => {
     let object = {name: 'Car'};
     return categories.post(object)
       .then(record => {
         Object.keys(object).forEach(key => {
-          expet(record[key]).toEqual(object[key]);
+          expect(record[key]).toEqual(object[key]);
         });
       });
+
+  // it('can GET a category', () => {
+  //   let object = {name: 'Tree'};
+  //   return categories.post(object);
+  //     .then(record => {
+  //       return categories.get(record_id);
+  //         .then(category => {
+  //           Object.keys(object).forEach(object[key]);
+  //             expect(category[0][key]).toEqual(object[key]);
+  //         });
+  //     });
+  // });
 
   });
   
