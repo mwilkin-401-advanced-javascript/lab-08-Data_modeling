@@ -27,19 +27,22 @@ describe('Categories Model', () => {
           expect(record[key]).toEqual(object[key]);
         });
       });
-
-  // it('can GET a category', () => {
-  //   let object = {name: 'Tree'};
-  //   return categories.post(object);
-  //     .then(record => {
-  //       return categories.get(record_id);
-  //         .then(category => {
-  //           Object.keys(object).forEach(object[key]);
-  //             expect(category[0][key]).toEqual(object[key]);
-  //         });
-  //     });
-  // });
-
   });
+
+  it('can GET a category', () => {
+    let object = {name: 'Tree'};
+    return categories.post(object)
+      .then(record => {
+        return categories.get(record._id)
+          .then(category => {
+            Object.keys(object).forEach(key => {
+              expect(category[0][key]).toEqual(object[key]);
+            });
+          });
+      });
+  });
+
+
   
+
 });
