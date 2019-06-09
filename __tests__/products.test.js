@@ -34,5 +34,35 @@ describe('Products Model', () => {
       });
   });
 
+  // it('can put() a product', () => {
+  //   let object1 = {name: 'Car'};
+  //   return products.post(object1)
+  //     .then(record => {
+  //       return products.delete(record._id)
+  //         .then(category => {
+  //           return products.get(category._id)
+  //             .then(subCat => {
+  //               expect(subCat.length).toBe(0);
+  //             });
+  //         });
+  //     });
+
+  // });
+
+  it('can delete() a product', () => {
+    let object1 = {name: 'Car'};
+    return products.post(object1)
+      .then(record => {
+        return products.delete(record._id)
+          .then(category => {
+            return products.get(category._id)
+              .then(subCat => {
+                expect(subCat.length).toBe(0);
+              });
+          });
+      });
+
+  });
+
 
 });
