@@ -5,14 +5,14 @@ Data Modeling
 # project-scaffold
 Scaffold for lab projects for 401
 
-[![Build Status](https://www.travis-ci.com/mwilkin-401-advanced-javascript/lab-04.svg?branch=master)](https://www.travis-ci.com/mwilkin-401-advanced-javascript/lab-04)
+<!-- [![Build Status](https://www.travis-ci.com/mwilkin-401-advanced-javascript/lab-08.svg?branch=master)](https://www.travis-ci.com/mwilkin-401-advanced-javascript/lab-04) -->
 
 ### Author: Matt Wilkin
 
 ### Links and Resources
-[submission PR](https://github.com/mwilkin-401-advanced-javascript/lab-04/pull/4)
+[submission PR](https://github.com/mwilkin-401-advanced-javascript/lab-08/pull/1)
 
-[travis](https://www.travis-ci.com/mwilkin-401-advanced-javascript/lab-04)
+<!-- [travis](https://www.travis-ci.com/mwilkin-401-advanced-javascript/lab-08) -->
 
 [heroku](https://stark-ravine-87947.herokuapp.com)
 
