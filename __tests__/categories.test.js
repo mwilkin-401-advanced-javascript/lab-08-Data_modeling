@@ -13,11 +13,11 @@ describe('Categories Model', () => {
   beforeEach(() => {
     categories = new Categories;
   });
-    describe('constructor', () => {
-      it('Can successfully instantiate an empty category', () => {
-        expect(categories).toBeDefined();
-      });
+  describe('constructor', () => {
+    it('Can successfully instantiate an empty category', () => {
+      expect(categories).toBeDefined();
     });
+  });
 
   it('can POST a new category', () => {
     let object = {name: 'Car'};
