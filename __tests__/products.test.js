@@ -11,7 +11,7 @@ afterAll(supergoose.stopDB);
 
 describe('Products Model', () => {
 
-  it('can POST a new product', () => {
+  it('can post() a new product', () => {
     let object = {name: 'Car'};
     return products.post(object)
       .then(record => {
@@ -21,6 +21,18 @@ describe('Products Model', () => {
       });
   });
 
+  it('can get() a product', () => {
+    let object = {name: 'Pants'};
+    return products.post(object)
+      .then(record => {
+        return products.get(record._id)
+          .then(category => {
+            Object.keys(object).forEach(key => {
+              expect(category[0][key]).toEqual(object[key]);
+            });
+          });
+      });
+  });
 
 
 });
