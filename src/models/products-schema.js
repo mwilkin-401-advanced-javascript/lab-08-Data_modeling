@@ -7,4 +7,14 @@ const products = mongoose.Schema({
   category: {type: String, required: true},
 });
 
+products.pre('save', function (){
+  this.name = this.name.toUpperCase();
+});
+
+products.post('save', function(){
+  console.log('Finished saving');
+  console.log(this);
+});
+
+
 module.exports = mongoose.model('products', products);

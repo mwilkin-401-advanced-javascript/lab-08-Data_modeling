@@ -1,6 +1,7 @@
 'use strict';
 
 const schema = require('./categories-schema.js');
+const uuid = require('uuid/v4');
 
 class Categories {
 
