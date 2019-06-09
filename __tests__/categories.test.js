@@ -42,6 +42,21 @@ describe('Categories Model', () => {
       });
   });
 
+  it('can PUT a category', () => {
+    let object1 = {name: 'Car'};
+    let object2 = {name: 'Boat'};
+    return categories.post(object1)
+      .then(record => {
+        return categories.put(record._id, object2)
+          .then(category => {
+            Object.keys(object2).forEach(key => {
+              expect(category[key]).toEqual(object2[key]);
+            });
+          });
+      });
+  });
+
+
 
   
 
