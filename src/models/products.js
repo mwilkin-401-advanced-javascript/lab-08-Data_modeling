@@ -1,14 +1,11 @@
 'use strict';
 
-// const uuid = require('uuid/v4');
-
 const schema = require('./products-schema.js');
 
 class Products {
 
   constructor() {
     this.database = [];
-    // this.product = product;
   }
 
   get(_id) {
