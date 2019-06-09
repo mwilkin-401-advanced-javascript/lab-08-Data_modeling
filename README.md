@@ -1,7 +1,7 @@
-# lab-08-Data_modeling
+# lab-08-Data_Modeling
 Data Modeling
 
-[![Build Status](https://www.travis-ci.com/mwilkin-401-advanced-javascript/lab-08.svg?branch=dev)](https://www.travis-ci.com/mwilkin-401-advanced-javascript/lab-08)
+[![Build Status](https://www.travis-ci.com/mwilkin-401-advanced-javascript/lab-08-Data_modeling.svg?branch=dev)](https://www.travis-ci.com/mwilkin-401-advanced-javascript/lab-08-Data_modeling)
 
 ### Author: Matt Wilkin
 
@@ -17,20 +17,31 @@ Data Modeling
 
 Dependencies
 jest
-lint
+eslint
+cors
+dotenv
+express
+mongoose
+mongoose-schema-jsonschema
+morgan
+supertest
+uuid
 
 Modules
+Products
+Products-schema
+Categories
+Categories-schema
 
-
-Exported Values and Methods
 
 
 ### Setup
 
-Running the app
-npm start
+npm install --save
+
 
 ### Tests
+
 How do you run tests?
 npm test
 
