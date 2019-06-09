@@ -34,20 +34,21 @@ describe('Products Model', () => {
       });
   });
 
-  // it('can put() a product', () => {
-  //   let object1 = {name: 'Car'};
-  //   return products.post(object1)
-  //     .then(record => {
-  //       return products.delete(record._id)
-  //         .then(category => {
-  //           return products.get(category._id)
-  //             .then(subCat => {
-  //               expect(subCat.length).toBe(0);
-  //             });
-  //         });
-  //     });
+  it('can put() a product', () => {
+    let object1 = {name: 'Car'};
+    let object2 = {name: 'Bike'};
+    
+    return products.post(object1)
+      .then(record => {
+        return products.put(record._id, object2)
+          .then(category => {
+            Object.keys(object2).forEach(key => {
+              expect(category[key]).toEqual(object2[key]);
+            });
+          });
 
-  // });
+      });
+  });
 
   it('can delete() a product', () => {
     let object1 = {name: 'Car'};
