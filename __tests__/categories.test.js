@@ -56,8 +56,18 @@ describe('Categories Model', () => {
       });
   });
 
-
-
+  it('can DELETE a category', () => {
+    let object1 = {name: 'Car'};
+    return categories.post(object1)
+      .then(record => {
+        return categories.delete(record._id)
+          .then(category => {
+            return categories.get(category._id)
+              .then(subCat => {
+                expect(subCat.length).toBe(0);
+              });
+          });
+      }); 
+  });
   
-
 });
