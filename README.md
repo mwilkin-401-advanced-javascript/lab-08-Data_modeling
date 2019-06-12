@@ -6,11 +6,13 @@ Data Modeling
 ### Author: Matt Wilkin
 
 ### Links and Resources
-[submission PR](https://github.com/mwilkin-401-advanced-javascript/lab-08/pull/1)
+* [Submission PR](https://github.com/mwilkin-401-advanced-javascript/lab-08/pull/1)
 
-[travis](https://www.travis-ci.com/mwilkin-401-advanced-javascript/lab-08)
+* [Travis](https://www.travis-ci.com/mwilkin-401-advanced-javascript/lab-08)
 
-[heroku](https://stark-ravine-87947.herokuapp.com)
+* [Heroku](https://stark-ravine-87947.herokuapp.com)
+
+* [UML](./assets/lab_08_UML.jpg)
 
 
 ### Documentation

@@ -20,11 +20,11 @@ class Products {
   }
 
   put(_id, entry) {
-    return schema.findBeIdAndUpdate(_id, entry, {new: true});
+    return schema.findByIdAndUpdate(_id, entry, {new: true});
   }
 
   delete(_id) {
-    return schema.findBeIdAndDelete(_id);
+    return schema.findByIdAndDelete(_id);
   }
 
   sanitize(entry) {
