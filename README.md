@@ -1,37 +1,49 @@
-# lab-08-Data_modeling
+# lab-08-Data_Modeling
 Data Modeling
 
-
-# project-scaffold
-Scaffold for lab projects for 401
-
-[![Build Status](https://www.travis-ci.com/mwilkin-401-advanced-javascript/lab-04.svg?branch=master)](https://www.travis-ci.com/mwilkin-401-advanced-javascript/lab-04)
+[![Build Status](https://www.travis-ci.com/mwilkin-401-advanced-javascript/lab-08-Data_modeling.svg?branch=dev)](https://www.travis-ci.com/mwilkin-401-advanced-javascript/lab-08-Data_modeling)
 
 ### Author: Matt Wilkin
 
 ### Links and Resources
-[submission PR](https://github.com/mwilkin-401-advanced-javascript/lab-04/pull/4)
+* [Submission PR](https://github.com/mwilkin-401-advanced-javascript/lab-08/pull/1)
 
-[travis](https://www.travis-ci.com/mwilkin-401-advanced-javascript/lab-04)
+* [Travis](https://www.travis-ci.com/mwilkin-401-advanced-javascript/lab-08)
+
+* [Heroku](https://stark-ravine-87947.herokuapp.com)
+
+* [UML](./assets/lab_08_UML.jpg)
+
 
 ### Documentation
 
 Dependencies
 jest
-lint
+eslint
+cors
+dotenv
+express
+mongoose
+mongoose-schema-jsonschema
+morgan
+supertest
+uuid
 
 Modules
+Products
+Products-schema
+Categories
+Categories-schema
 
-
-Exported Values and Methods
 
 
 ### Setup
 
-Running the app
-npm start
+npm install --save
+
 
 ### Tests
+
 How do you run tests?
 npm test
 
